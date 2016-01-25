@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dependency Parse Tree Viewer (http://github.com/sobhe)</title>
+</head>
+<body>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="tree.css">
+<script type="text/javascript" src="d3.js"></script>
+<script type="text/javascript" src="dependency-tree.js"></script>
+
+<div class="container">
+<h2>Dependency Parse Tree Viewer</h2>
+<p><a href="https://github.com/sobhe/dependency-parse-tree">[GitHub]</a></p>
+<div class="tree">
+	<svg height="0"></svg>
+</div>
+<textarea id="data" class="form-control">
+
+</textarea>
+<button id="draw" class="btn btn-default">Draw</button>
+</div>
+<script type="text/javascript">
+	d3.select('#draw').on('click', function() {
+		drawTree('.tree svg', d3.select('#data')[0][0].value, false);
+	});
+	d3.select('#draw').on('click')();
+</script>
+</body>
+</html>

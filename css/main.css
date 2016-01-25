@@ -1,0 +1,26 @@
+body {
+	direction: ltr;
+}
+h2, .btn {
+	font-family: BMitra, 'B Mitra';
+}
+h2 {
+	font-weight: bold;
+}
+.btn {
+	font-size: 12px;
+	padding: 4px 8px 2px;
+}
+.container {
+	max-width: 4000px;
+}
+textarea {
+	direction: ltr;
+	font-family: serif;
+	tab-size: 15;
+	min-height: 300px;
+	margin-top: 5px;
+}
+#draw {
+	margin-top: 5px;
+}
